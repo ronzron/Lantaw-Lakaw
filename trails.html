@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lantaw-Lakaw trail directory — difficulty, distance, elevation, and descriptions." />
+  <title>Trails | Lantaw-Lakaw</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: .45rem 1.2rem;
+      border-radius: 99px;
+      border: 2px solid var(--green-mid);
+      background: transparent;
+      color: var(--green-mid);
+      font-size: .88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--green-mid);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span>🏔️</span> Lantaw-Lakaw
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== PAGE HERO ======== -->
+  <header class="page-hero">
+    <div class="container">
+      <h1>🗺️ Trail Directory</h1>
+      <p>Find your next adventure — filter by difficulty and discover detailed trail info.</p>
+    </div>
+  </header>
+
+  <!-- ======== TRAILS LIST ======== -->
+  <main class="section">
+    <div class="container">
+
+      <!-- Filter bar -->
+      <div class="filter-bar" role="group" aria-label="Filter trails by difficulty">
+        <button class="filter-btn active" data-filter="all">All Trails</button>
+        <button class="filter-btn" data-filter="easy">Easy</button>
+        <button class="filter-btn" data-filter="moderate">Moderate</button>
+        <button class="filter-btn" data-filter="hard">Hard</button>
+      </div>
+
+      <!-- Trail 1 -->
+      <div class="trail-detail-card" data-difficulty="moderate">
+        <div class="trail-banner" style="background-image:linear-gradient(160deg,#2d5016,#4a7c2f)">
+          <div class="trail-banner-info">
+            <h2>Ridgeline Loop</h2>
+            <span class="tag tag-moderate">Moderate</span>
+          </div>
+        </div>
+        <div class="trail-meta">
+          <div class="trail-meta-item"><div class="val">8.4 km</div><div class="key">Distance</div></div>
+          <div class="trail-meta-item"><div class="val">620 m</div><div class="key">Elevation Gain</div></div>
+          <div class="trail-meta-item"><div class="val">4–5 h</div><div class="key">Duration</div></div>
+          <div class="trail-meta-item"><div class="val">1,240 m</div><div class="key">Max Elevation</div></div>
+          <div class="trail-meta-item"><div class="val">Loop</div><div class="key">Route Type</div></div>
+        </div>
+        <div class="trail-description">
+          <p>The Ridgeline Loop is our most-hiked trail. Starting from the pine forest trailhead, it climbs steadily to the main ridge where sweeping views open up on both sides of the mountain range. The return leg follows a different ridgeline so you never retrace your steps.</p>
+          <p>Best visited October–April. Bring at least 2 L of water — no sources on the ridge. The path is well-marked with orange blazes. Suitable for hikers with moderate fitness.</p>
+          <a href="journal.html" class="btn btn-primary" style="font-size:.88rem">Read trail journals</a>
+        </div>
+      </div>
+
+      <!-- Trail 2 -->
+      <div class="trail-detail-card" data-difficulty="easy">
+        <div class="trail-banner" style="background-image:linear-gradient(160deg,#1a5c4a,#0d3d32)">
+          <div class="trail-banner-info">
+            <h2>River Canyon Path</h2>
+            <span class="tag tag-easy">Easy</span>
+          </div>
+        </div>
+        <div class="trail-meta">
+          <div class="trail-meta-item"><div class="val">5.2 km</div><div class="key">Distance</div></div>
+          <div class="trail-meta-item"><div class="val">180 m</div><div class="key">Elevation Gain</div></div>
+          <div class="trail-meta-item"><div class="val">2–3 h</div><div class="key">Duration</div></div>
+          <div class="trail-meta-item"><div class="val">680 m</div><div class="key">Max Elevation</div></div>
+          <div class="trail-meta-item"><div class="val">Out &amp; back</div><div class="key">Route Type</div></div>
+        </div>
+        <div class="trail-description">
+          <p>One of the most family-friendly hikes in the area. You follow the cool mountain river upstream through a lush canyon, with multiple shallow crossing points and natural pools along the way. Three small waterfalls can be reached as side-trips.</p>
+          <p>Great year-round but especially beautiful just after the rains when the foliage is intensely green. Sandals or water shoes recommended at river crossings. Excellent first hike for beginners.</p>
+          <a href="journal.html" class="btn btn-primary" style="font-size:.88rem">Read trail journals</a>
+        </div>
+      </div>
+
+      <!-- Trail 3 -->
+      <div class="trail-detail-card" data-difficulty="hard">
+        <div class="trail-banner" style="background-image:linear-gradient(160deg,#5c1a1a,#3d0d0d)">
+          <div class="trail-banner-info">
+            <h2>Summit Scramble</h2>
+            <span class="tag tag-hard">Hard</span>
+          </div>
+        </div>
+        <div class="trail-meta">
+          <div class="trail-meta-item"><div class="val">14 km</div><div class="key">Distance</div></div>
+          <div class="trail-meta-item"><div class="val">1,400 m</div><div class="key">Elevation Gain</div></div>
+          <div class="trail-meta-item"><div class="val">8–10 h</div><div class="key">Duration</div></div>
+          <div class="trail-meta-item"><div class="val">2,820 m</div><div class="key">Max Elevation</div></div>
+          <div class="trail-meta-item"><div class="val">Out &amp; back</div><div class="key">Route Type</div></div>
+        </div>
+        <div class="trail-description">
+          <p>The flagship challenge of the Lantaw-Lakaw group. The Summit Scramble gains 1,400 metres over 7 km of rugged trail before a final exposed rock scramble to the summit block. The views from the top are nothing short of spectacular — on a clear day you can see three provinces.</p>
+          <p>Recommended for experienced hikers only. Register with the ranger station, carry a headlamp for early starts, and never attempt in bad weather. Camping at the saddle (km 6) splits the climb into two days for a more enjoyable experience.</p>
+          <a href="journal.html" class="btn btn-primary" style="font-size:.88rem">Read trail journals</a>
+        </div>
+      </div>
+
+      <!-- Trail 4 -->
+      <div class="trail-detail-card" data-difficulty="moderate">
+        <div class="trail-banner" style="background-image:linear-gradient(160deg,#3d4a30,#6b7560)">
+          <div class="trail-banner-info">
+            <h2>Cloudforest Traverse</h2>
+            <span class="tag tag-moderate">Moderate</span>
+          </div>
+        </div>
+        <div class="trail-meta">
+          <div class="trail-meta-item"><div class="val">10.8 km</div><div class="key">Distance</div></div>
+          <div class="trail-meta-item"><div class="val">850 m</div><div class="key">Elevation Gain</div></div>
+          <div class="trail-meta-item"><div class="val">6–7 h</div><div class="key">Duration</div></div>
+          <div class="trail-meta-item"><div class="val">1,780 m</div><div class="key">Max Elevation</div></div>
+          <div class="trail-meta-item"><div class="val">Point-to-point</div><div class="key">Route Type</div></div>
+        </div>
+        <div class="trail-description">
+          <p>A magical point-to-point route through a mossy cloudforest. Above 1,600 m the trees become gnarled and draped in thick green moss, clouds sweep through at eye level, and the forest becomes almost surreal. Best done with an overnight at the forest camp mid-route.</p>
+          <p>Requires two cars or a shuttle arrangement. Trail is marked but can be muddy — trekking poles and gaiters strongly recommended. Carry plenty of warm layers; temperatures drop sharply after dark.</p>
+          <a href="journal.html" class="btn btn-primary" style="font-size:.88rem">Read trail journals</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo"><span>🏔️</span> Lantaw-Lakaw</div>
+          <p>A hiking journal by a group of friends who believe every mountain has a story worth telling.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Lantaw-Lakaw · Made with ❤️ and muddy boots · <em>Walk with a view</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

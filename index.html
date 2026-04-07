@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lantaw-Lakaw — a hiking journal by friends. Trail stories, photos, and adventure logs." />
+  <title>Lantaw-Lakaw | Walk with a View</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Lantaw-Lakaw home">
+        <span>🏔️</span> Lantaw-Lakaw
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <header class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <!-- SVG mountain silhouette -->
+    <svg class="hero-mountain" viewBox="0 0 600 300" fill="white" aria-hidden="true">
+      <polygon points="0,300 150,80 300,200 420,60 600,300"/>
+    </svg>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">🌿 Hike · Journal · Connect</span>
+        <h1>Every trail tells<br><em>a story.</em></h1>
+        <p class="tagline">
+          Lantaw-Lakaw is where we log our hikes, share the views, and keep the memories of every climb alive.
+        </p>
+        <div class="hero-cta">
+          <a href="journal.html" class="btn btn-primary">Read the Journal</a>
+          <a href="trails.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.6)">Browse Trails</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">12</div>
+            <div class="lbl">Trails</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">28</div>
+            <div class="lbl">Journal Entries</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">340+</div>
+            <div class="lbl">Photos</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">6</div>
+            <div class="lbl">Hikers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== RECENT JOURNAL ======== -->
+  <section class="section" id="journal">
+    <div class="container">
+      <h2 class="section-title">Recent Journal Entries</h2>
+      <div class="journal-grid">
+
+        <!-- Entry 1 -->
+        <article class="journal-card">
+          <div class="journal-thumb" style="background-image:linear-gradient(160deg,#2d7a2d,#1a5c1a)">
+            <span class="tag tag-moderate">Moderate</span>
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span>📅 March 22, 2025</span>
+              <span>🧍 4 hikers</span>
+            </div>
+            <h3>Misty Morning on Mt. Apo Trail</h3>
+            <p>We started before dawn. The fog was thick and the air smelled of pine and wet earth. By sunrise the whole valley opened up below us — absolutely breathtaking.</p>
+            <a href="journal.html" class="read-more">Read full entry →</a>
+          </div>
+        </article>
+
+        <!-- Entry 2 -->
+        <article class="journal-card">
+          <div class="journal-thumb" style="background-image:linear-gradient(160deg,#1a5c4a,#0d3d32)">
+            <span class="tag tag-easy">Easy</span>
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span>📅 February 8, 2025</span>
+              <span>🧍 6 hikers</span>
+            </div>
+            <h3>Waterfalls & Wildflowers Loop</h3>
+            <p>A perfect day trip with the whole crew. We followed the river upstream and discovered three hidden waterfalls we had never seen on any map. Cool mist, warm laughter.</p>
+            <a href="journal.html" class="read-more">Read full entry →</a>
+          </div>
+        </article>
+
+        <!-- Entry 3 -->
+        <article class="journal-card">
+          <div class="journal-thumb" style="background-image:linear-gradient(160deg,#5c3d1a,#3d2810)">
+            <span class="tag tag-hard">Hard</span>
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span>📅 January 1, 2025</span>
+              <span>🧍 3 hikers</span>
+            </div>
+            <h3>New Year's Sunrise Summit</h3>
+            <p>We rang in 2025 on a rocky ridge at 2,800 m. Cold, tired, but grinning ear to ear. The first light of the new year hit the peaks and turned everything gold.</p>
+            <a href="journal.html" class="read-more">Read full entry →</a>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="journal.html" class="btn btn-outline">View All Entries</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== QUOTE BANNER ======== -->
+  <div class="quote-banner" aria-label="Inspirational quote">
+    <blockquote>"The mountains are calling and I must go."</blockquote>
+    <cite>— John Muir</cite>
+  </div>
+
+  <!-- ======== FEATURED TRAILS ======== -->
+  <section class="section" id="trails" style="background:#fff">
+    <div class="container">
+      <h2 class="section-title">Featured Trails</h2>
+      <div class="trails-grid">
+
+        <div class="trail-card">
+          <div class="trail-img" style="background-image:linear-gradient(160deg,#2d7a2d,#1a3a07)"></div>
+          <div class="trail-body">
+            <h3>Ridgeline Loop</h3>
+            <div class="trail-info">
+              <span>📍 8.4 km</span>
+              <span>⏱ 4–5 hrs</span>
+              <span>⬆ 620 m gain</span>
+            </div>
+            <span class="tag tag-moderate">Moderate</span>
+            <p style="margin-top:.6rem;font-size:.88rem">A classic ridge walk with panoramic views from both sides of the divide.</p>
+            <a href="trails.html" class="btn btn-outline" style="margin-top:.9rem;padding:.45rem 1.1rem;font-size:.85rem">View Trail</a>
+          </div>
+        </div>
+
+        <div class="trail-card">
+          <div class="trail-img" style="background-image:linear-gradient(160deg,#1a5c4a,#0d3d32)"></div>
+          <div class="trail-body">
+            <h3>River Canyon Path</h3>
+            <div class="trail-info">
+              <span>📍 5.2 km</span>
+              <span>⏱ 2–3 hrs</span>
+              <span>⬆ 180 m gain</span>
+            </div>
+            <span class="tag tag-easy">Easy</span>
+            <p style="margin-top:.6rem;font-size:.88rem">Follow the cool river through a lush canyon — great for beginners and families.</p>
+            <a href="trails.html" class="btn btn-outline" style="margin-top:.9rem;padding:.45rem 1.1rem;font-size:.85rem">View Trail</a>
+          </div>
+        </div>
+
+        <div class="trail-card">
+          <div class="trail-img" style="background-image:linear-gradient(160deg,#5c1a1a,#3d0d0d)"></div>
+          <div class="trail-body">
+            <h3>Summit Scramble</h3>
+            <div class="trail-info">
+              <span>📍 14 km</span>
+              <span>⏱ 8–10 hrs</span>
+              <span>⬆ 1,400 m gain</span>
+            </div>
+            <span class="tag tag-hard">Hard</span>
+            <p style="margin-top:.6rem;font-size:.88rem">A full-day push to the highest accessible peak. Rewarding views at every turn.</p>
+            <a href="trails.html" class="btn btn-outline" style="margin-top:.9rem;padding:.45rem 1.1rem;font-size:.85rem">View Trail</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="trails.html" class="btn btn-primary">Explore All Trails</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PHOTO HIGHLIGHTS ======== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Photo Highlights</h2>
+      <div class="gallery-masonry">
+
+        <div class="gallery-item" data-img="" data-caption="Misty ridge at sunrise" tabindex="0" role="button" aria-label="View photo: Misty ridge at sunrise">
+          <div style="background:linear-gradient(160deg,#2d5016,#4a7c2f);height:220px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+        <div class="gallery-item" data-img="" data-caption="Waterfall break" tabindex="0" role="button" aria-label="View photo: Waterfall break">
+          <div style="background:linear-gradient(160deg,#1a5c4a,#2d7a2d);height:160px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+        <div class="gallery-item" data-img="" data-caption="Camp life" tabindex="0" role="button" aria-label="View photo: Camp life">
+          <div style="background:linear-gradient(160deg,#5c3d1a,#8b6914);height:190px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+        <div class="gallery-item" data-img="" data-caption="Golden hour peak" tabindex="0" role="button" aria-label="View photo: Golden hour peak">
+          <div style="background:linear-gradient(160deg,#c9a84c,#8b6914);height:175px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+        <div class="gallery-item" data-img="" data-caption="The whole crew" tabindex="0" role="button" aria-label="View photo: The whole crew">
+          <div style="background:linear-gradient(160deg,#1a3a07,#2d7a2d);height:200px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+        <div class="gallery-item" data-img="" data-caption="Trail snacks" tabindex="0" role="button" aria-label="View photo: Trail snacks">
+          <div style="background:linear-gradient(160deg,#3d4a30,#6b7560);height:155px;border-radius:6px"></div>
+          <div class="overlay">🔍</div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="gallery.html" class="btn btn-primary">See Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== HIKER TIPS ======== -->
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2 class="section-title">Hiker Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="icon">🎒</div>
+          <h4>Pack Smart</h4>
+          <p>Layer up, bring 2× the water you think you need, and always carry a first-aid kit and emergency whistle.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🗺️</div>
+          <h4>Know Your Trail</h4>
+          <p>Download offline maps before leaving. Check the weather and register with the local ranger station.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🍌</div>
+          <h4>Fuel Right</h4>
+          <p>Trail mix, bananas, energy bars, and a proper hot meal at camp. Food is morale on the mountain.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🌿</div>
+          <h4>Leave No Trace</h4>
+          <p>Pack out all rubbish. Stay on marked trails. Respect the wildlife and the plants along the way.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">🌤️</div>
+          <h4>Start Early</h4>
+          <p>Hit the trail at first light. You beat the heat, the crowds, and get the best golden-hour light for photos.</p>
+        </div>
+        <div class="tip-card">
+          <div class="icon">👟</div>
+          <h4>Gear Up</h4>
+          <p>Break in boots before long hikes. Trekking poles save knees on the descent. Gaiters keep pebbles out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo"><span>🏔️</span> Lantaw-Lakaw</div>
+          <p>A hiking journal by a group of friends who believe every mountain has a story worth telling.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <div class="footer-links">
+          <h4>Hike Essentials</h4>
+          <ul>
+            <li><a href="trails.html">Trail Finder</a></li>
+            <li><a href="index.html#tips">Packing Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Lantaw-Lakaw · Made with ❤️ and muddy boots · <em>Walk with a view</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox (for gallery) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
